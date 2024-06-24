@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Notify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="search-location">
+          <i class="bi bi-search"></i>
+          <input type="text" class="location-input" , id="location-input" />
+        </div>
+      </nav>
+      <div class="current-conditions">
+        <div class="top-border"></div>
+        <div class="weather-conditions">
+          <div class="conditions">
+            <p class="weather-type" id="weather-type"></p>
+            <p class="client-location" id = "client-location"></p>
+            <p class="temperature-value" id="temperature-value"></p>
+            <div class="max-min-temp">
+              <span class="max-temp">Max</span>
+              <span class="max-temp-value"></span>
+              <span class="min-temp">Min</span>
+              <span class="min-temp-value"></span>
+            </div>
+          </div>
+          <div class="weather-icons">
+            <img
+              src="Images/Patchy rain possible.png"
+              alt=""
+              class="weather-icon"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainLeftContainer">
+        <div class="extraWeatherParameters">
+          <h3></h3>
+          <div class="parameters">
+            <div class="left-container inner-container">
+              <span class="feels-like-temp">Feels Like</span>
+              <p class="feels-like-temp-value"></p>
+              <div class="weather-attributes">
+                <img src="Images/wind.png" alt="" />
+                <span class="attribute-name">Wind</span>
+                <span id="windspeed" class="attribute-value"></span>
+                <img src="Images/drop.png" alt="" />
+                <span class="attribute-name">Humidity</span>
+                <span id="humidity" class="attribute-value"></span>
+                <img src="Images/pressure.png" alt="" />
+                <span class="attribute-name">Pressure</span>
+                <span id="pressure" class="attribute-value"></span>
+                <img src="Images/visibility.png" alt="" />
+                <span class="attribute-name">Visibility</span>
+                <span id="visibility" class="attribute-value"></span>
+              </div>
+            </div>
+            <div class="right-container inner-container">
+              <div class="weather-attributes">
+                <img src="Images/uv.png" alt="" />
+                <span class="attribute-name">UV Index</span>
+                <span id="windspeed" class="attribute-value"></span>
+                <img src="Images/raining.png" alt="" />
+                <span class="attribute-name">Rain Possibility</span>
+                <span id="humidity" class="attribute-value"></span>
+                <img src="Images/vaporize.png" alt="" />
+                <span class="attribute-name">Precipation</span>
+                <span id="pressure" class="attribute-value"></span>
+                <img src="Images/gust.png" alt="" />
+                <span class="attribute-name">Gust</span>
+                <span id="visibility" class="attribute-value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hourlyForecast">
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
